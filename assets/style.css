@@ -26,7 +26,19 @@ header{
   border-bottom-style: solid;
   height: 90px;
   widows: 100%;
-  font-family: 'Georgia', Times, Times New Roman, serif;`
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+a{
+  text-decoration: none;
+  color: black
+}
+a:hover{
+  background-color: #4aaaa5;
+  color: white;
+  
+}
+
+img{
 
 }
 
@@ -52,17 +64,16 @@ header{
     top: 0px;
     padding: 25px;
     
+    
   }
   
   /* image */
-#image{
+.image{
   padding: 15px 20px;
   margin: auto;
-  font-size: 20px;
-  width: 20%;
+  width: 30%;
   float: left;
-  
-}
+  }
 
 /* Paragraphs*/
 .About {
@@ -74,16 +85,20 @@ header{
   font-size: 16px;
   float: none;
   width: 960px;
-  height:500px;
+  height:auto;
   line-height: 1.5;
+  margin-bottom: 100px;
+  padding: 15px;
+  overflow: auto;
 }
+
 .topic{
   color:#4aaaa5;
   text-align: left;
   padding-left: 15px;
   padding-bottom: 20px;
   background-color: #ffffff;
-  /* margin: 5px; */
+  
   
   
 }
@@ -94,6 +109,7 @@ header{
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;`
   padding-left: 15px;
   padding-bottom: 20px;
+  
 }
 
 footer{
@@ -104,10 +120,11 @@ footer{
   border-right-style: hidden;
   border-bottom-style: hidden;
   height: 60px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin-top: 65px
  } 
 
  .contact-boxes{
@@ -128,3 +145,45 @@ footer{
   margin-left: 20px;
   height: 100px;
 }
+.portfolio-image{
+  position: relative;
+  text-align: center;
+  color: white;
+  float: left;
+  margin: auto;
+  width: 200px;
+   height: auto; 
+   /* border: #4aaaa5;
+   border-style: solid; */
+   padding-right: 10px;
+   padding-bottom: 10px;
+
+  
+}
+  .bottom {
+    bottom: 10px;
+    /* width: inherit; */ 
+    background-color:#4aaaa5;
+     z-index: 1;
+    /* height: 30px; */
+    /* font-size: 20px; */
+    /* position: absolute;  */
+    padding-right: 10px; 
+    margin-bottom: 10px;
+       
+  }
+  .my-work{
+    /* padding: 10% 20% 10% 20%; */
+    margin: auto;
+    float: left;
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 10px; */
+
+
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
